@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chinasoft.dao.BookMapper">
+    <select id="getAllBook" resultType="book">
+        select * from book
+    </select>
+
+    <select id="getBookById" resultType="book">
+        select * from book where bid = #{id}
+    </select>
+
+    <select id="selectByNameLike" parameterType="string" resultType="book">
+        <bind name="name" value="'%' + _parameter.name + '%'" />
+        select * from book where bname like #{name}
+    </select>
+
+    <select id="selectLimit" parameterType="map" resultType="book">
+        select * from book limit #{startIndex},#{pageSize};
+    </select>
+
+    <select id="bookCount" resultType="int">
+            select count(*) from book
+    </select>
+
+    <insert id="addBook" parameterType="book">
+        insert into book(bname,bcount,details) values(#{bname},#{bcount},#{details})
+    </insert>
+
+    <update id="updateBook" parameterType="book">
+        update book
+        <set>
+            <if test="bname != null">bname=#{bname},</if>
+            <if test="bcount != null">bcount=#{bcount},</if>
+            <if test="details != null">details=#{details},</if>
+        </set>
+        where bid = #{bid}
+    </update>
+
+    <delete id="deleteBook">
+        delete from book where bid = #{id}
+    </delete>
+
+</mapper>

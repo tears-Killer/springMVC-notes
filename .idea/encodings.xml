@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/SpringMVC-day1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringMVC-day1/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springMVC-start/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springMVC-start/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-interceptor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-interceptor/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../test/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../work/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../work/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
